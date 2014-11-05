@@ -1,0 +1,61 @@
+/* line 3, ../src/scss/valign.scss */
+.bordered {
+  border: 1px solid green;
+  text-align: center; }
+
+/* line 8, ../src/scss/valign.scss */
+.spacer {
+  display: block;
+  height: 10px;
+  content: ""; }
+
+/* line 14, ../src/scss/valign.scss */
+.valign-container-simple {
+  min-height: 64px;
+  width: 100%;
+  display: table !important; }
+  /* line 7, ../src/scss/_mixin.valign.scss */
+  .lt-ie8 .valign-container-simple {
+    display: block; }
+  /* line 17, ../src/scss/valign.scss */
+  .valign-container-simple .valign-content-simple {
+    display: table-cell !important;
+    vertical-align: middle; }
+    /* line 15, ../src/scss/_mixin.valign.scss */
+    .lt-ie8 .valign-container-simple .valign-content-simple {
+      display: block;
+      margin-top: expression((parentNode.offsetHeight.offsetHeight/2)-(parseInt(this.offsetHeight)/2) <0 ? "0" :(parentNode.offsetHeight/2)-(parseInt(this.offsetHeight)/2) +'px'); }
+
+/* line 22, ../src/scss/valign.scss */
+.valign-container-set-minheight {
+  min-height: 128px;
+  width: 100%;
+  display: table !important; }
+  /* line 7, ../src/scss/_mixin.valign.scss */
+  .lt-ie8 .valign-container-set-minheight {
+    display: block; }
+  /* line 25, ../src/scss/valign.scss */
+  .valign-container-set-minheight .valign-content-set-minheight {
+    display: table-cell !important;
+    vertical-align: middle; }
+    /* line 15, ../src/scss/_mixin.valign.scss */
+    .lt-ie8 .valign-container-set-minheight .valign-content-set-minheight {
+      display: block;
+      margin-top: expression((parentNode.offsetHeight.offsetHeight/2)-(parseInt(this.offsetHeight)/2) <0 ? "0" :(parentNode.offsetHeight/2)-(parseInt(this.offsetHeight)/2) +'px'); }
+
+/* line 30, ../src/scss/valign.scss */
+.valign-container-set-minheight-width {
+  min-height: 300px;
+  width: 300px;
+  display: table !important; }
+  /* line 7, ../src/scss/_mixin.valign.scss */
+  .lt-ie8 .valign-container-set-minheight-width {
+    display: block; }
+  /* line 33, ../src/scss/valign.scss */
+  .valign-container-set-minheight-width .valign-content-set-minheight-width {
+    display: table-cell !important;
+    vertical-align: middle; }
+    /* line 15, ../src/scss/_mixin.valign.scss */
+    .lt-ie8 .valign-container-set-minheight-width .valign-content-set-minheight-width {
+      display: block;
+      margin-top: expression((parentNode.offsetHeight.offsetHeight/2)-(parseInt(this.offsetHeight)/2) <0 ? "0" :(parentNode.offsetHeight/2)-(parseInt(this.offsetHeight)/2) +'px'); }

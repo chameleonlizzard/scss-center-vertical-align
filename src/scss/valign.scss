@@ -1,0 +1,36 @@
+@import "_mixin.valign.scss";
+
+.bordered {
+    border: 1px solid green;
+    text-align: center;
+}
+
+.spacer {
+    display: block;
+    height: 10px;
+    content: "";
+}
+
+.valign-container-simple {
+    @include valign-container();
+
+    .valign-content-simple {
+        @include valign-content();
+    }
+}
+
+.valign-container-set-minheight {
+    @include valign-container($min-height: 128px);
+
+    .valign-content-set-minheight {
+        @include valign-content();
+    }
+}
+
+.valign-container-set-minheight-width {
+    @include valign-container($min-height: 300px, $width: 300px);
+
+    .valign-content-set-minheight-width {
+        @include valign-content();
+    }
+}

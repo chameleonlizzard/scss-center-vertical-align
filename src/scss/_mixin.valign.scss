@@ -1,0 +1,19 @@
+@import "compass";
+
+@mixin valign-container($width: 100%, $min-height: 64px) {
+    @include min-height($min-height);
+    width: $width;
+    display: table !important;
+    .lt-ie8 & {
+        display: block;
+    }
+}
+
+@mixin valign-content() {
+    display: table-cell !important;
+    vertical-align: middle;
+    .lt-ie8 & {
+        display: block;
+        margin-top: expression((parentNode.offsetHeight.offsetHeight/2)-(parseInt(this.offsetHeight)/2) <0 ? "0" :(parentNode.offsetHeight/2)-(parseInt(this.offsetHeight)/2) +'px');
+    }
+}

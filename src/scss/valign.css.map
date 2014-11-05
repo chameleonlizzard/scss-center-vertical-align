@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACN,MAAM,EAAE,eAAe",
+"sources": ["valign.scss"],
+"names": [],
+"file": "valign.css"
+}
